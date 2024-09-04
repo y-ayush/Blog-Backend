@@ -9,6 +9,7 @@ import mongoose from "mongoose";
 const cookiesOption = {
     httpOnly: true,
     secure: true,
+    sameSite: "None",
 };
 
 const registerUser = asyncHandler(async function (req, res, next) {
