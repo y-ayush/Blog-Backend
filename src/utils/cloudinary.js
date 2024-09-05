@@ -29,7 +29,7 @@ const uploadOnCloudnary = async function (localFilePath, folder = "BlogPosts") {
                 resource_type: "auto",
             });
             fs.unlinkSync(localFilePath); // remove the file from local server
-            return response.url;
+            return response.secure_url;
         }
     } catch (error) {
         fs.unlinkSync(localFilePath); // remove the file from local server
