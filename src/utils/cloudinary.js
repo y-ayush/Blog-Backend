@@ -6,6 +6,7 @@ cloudinary.config({
     cloud_name: process.env.CLUODINARY_CLOUD_NAME,
     api_key: process.env.CLUODINARY_API_KEY,
     api_secret: process.env.CLUODINARY_API_SECRET,
+    secure: true,
 });
 
 function getFilePublicId(fileUrl) {
